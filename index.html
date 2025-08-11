@@ -22,7 +22,7 @@
             margin: 0;
         }
         </style>
-        <title>Rencana Tanah Aset Kota Surabaya</title>
+        <title>Rencana Pemanfaatan Tanah Aset Kota Surabaya</title>
     </head>
     <body>
 
@@ -82,10 +82,10 @@
 
     <div id="welcome-overlay">
         <div id="welcome-box">
-            <h2>Selamat Datang di WebGIS Aset dan Penataan Kota Surabaya</h2>
+            <h2>Selamat Datang di WebGIS Penataan Tanah Aset Kota Surabaya</h2>
             <p>Gunakan opsi <strong>Layers</strong> di pojok kanan atas untuk mengatur tampilan peta.<br>
             Harap tunggu dan jangan tutup halaman ketika terjadi freeze, sistem sedang memproses masukan.</p>
-            <button id="welcome-btn">Oke, mengerti!</button>
+            <button id="welcome-btn">Siap, mengerti!</button>
         </div>
     </div>
 
@@ -563,12 +563,12 @@
         search.style.display = "flex";
         search.style.backgroundColor="rgba(255,255,255,0.5)" 
 
-        // Créer le nouvel élément bouton
+        // Yg ini buat munculin elemen tombol
         var button = document.createElement("div");
         button.id = "gcd-button-control";
         button.className = "gcd-gl-btn fa fa-search search-button";
 
-        // Ajouter le bouton à l'élément parent
+        // Nambahin tombol ke parent element
         search.insertBefore(button, search.firstChild);
         last = search.lastChild;
         last.style.display = "none";
@@ -656,7 +656,7 @@ document.body.appendChild(header);
         const overlay = document.getElementById("welcome-overlay");
         const btn = document.getElementById("welcome-btn");
 
-        // Selalu tampil setiap kali halaman dibuka
+        // Ini biar popup selalu muncul saat web dibuka
         setTimeout(() => overlay.classList.add("show"), 300);
 
         function closePopup() {
