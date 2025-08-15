@@ -6,6 +6,7 @@
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/L.Control.Layers.Tree.css">
         <link rel="stylesheet" href="css/L.Control.Locate.min.css">
@@ -14,13 +15,18 @@
         <link rel="stylesheet" href="css/leaflet-search.css">
         <link rel="stylesheet" href="css/leaflet.photon.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
-        <style>
-        html, body, #map {
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin: 0;
-        }
+     	<style>
+		  html, body {
+    		margin: 0;
+    		padding: 0;
+    		height: 100%;
+    		overflow: hidden; /* supaya gak muncul scroll horizontal */
+  			}
+
+  		  #map {
+    		width: 100%;
+    		height: 100vh; /* tinggi penuh sesuai layar */
+  			}
         </style>
         <title>Rencana Pemanfaatan Tanah Aset Kota Surabaya</title>
     </head>
